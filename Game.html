@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    
+    <link rel="stylesheet" href="Game.css" />
+  </head>
+  <body>
+    <div id="father">
+    <div>
+      <h1>Rock Paper Scissor</h1>
+    </div>
+    <div>
+      <button onclick="pickMove('rock')" title="Rock">👊</button>
+      <button onclick="pickMove('paper')" title="Paper">🖐</button>
+      <button onclick="pickMove('scissor')" title="Scissor">✌</button>
+      <div id="computerchoicediv" >computer Choice: <span id="computerMove"></span></div>
+      <div id="resultdiv">Result: <span id="result"></span></div>
+      <div id="playerScorediv">Player Score: <span id="playerscore"></span></div>
+      <div id="computerScorediv">Computer Score: <span id="computerscore"></span></div>
+    </div>
+     <button id="restart" onclick="restartGame()">Restart Game</button>
+    </div>
+   
+    <script src="Game.js"></script>
+  </body>
+</html>

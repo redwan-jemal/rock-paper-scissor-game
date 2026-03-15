@@ -1,0 +1,121 @@
+body {
+  background: linear-gradient(135deg,#4facfe,#00f2fe);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin:0;
+   color: #062369;
+}
+
+h1 {
+ 
+  font-size: 2rem;
+  text-align: center;
+}
+
+#father{
+  background-color: rgba(192, 231, 249, 0.925);
+  padding: 80px;
+  border-radius: 5%;
+  width: 50%;
+  max-width: 500px;
+  text-align: center;
+}
+button{
+  margin: 15px;
+  height: 5rem;
+  width: 5rem;
+  font-size: 100%;
+  border-radius: 50%;
+  border:none;
+  background-color: #199197;
+}
+
+button:hover{
+  cursor: pointer;
+  transform: scale(1.25);
+  transition: transform 0.3s ease;
+}
+
+#computermovechoice{
+  margin-top:30px;
+}
+
+#resultdiv{
+  margin-top:20px;
+}
+
+#playerScorediv{
+  margin-top:30px;
+}
+
+#computerScorediv{
+  margin-top:10px;
+}
+
+#restart{
+  border-radius: 10px;
+  height: 50px;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+    color: #062369;
+background: linear-gradient(135deg,#4facfe,#00f2fe);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  margin-top: 20px;
+}
+
+
+#restart:hover{
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+
+#restart:active{
+  transform: scale(0.95);
+}
+@media (max-width: 768px){
+
+#father{
+  width:80%;
+  padding:60px;
+}
+
+button{
+  height:4.5rem;
+  width:4.5rem;
+}
+
+}
+
+
+@media (max-width: 480px){
+
+body{
+  font-size:1.2rem;
+}
+
+#father{
+  width:90%;
+  padding:40px 20px;
+}
+
+button{
+  height:4rem;
+  width:4rem;
+  margin:10px;
+}
+
+h1{
+  font-size:1.6rem;
+}
+
+}
