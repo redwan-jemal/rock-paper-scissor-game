@@ -4,15 +4,17 @@ function pickMove(playerChoice) {
 const randomNumber= Math.random();
 let computerMove;
 
+
+ 
     if(randomNumber >=0 && randomNumber < 1/3){
-        computerMove="rock";
+        computerMove="rock 👊";
 
       
     }else if(randomNumber >=1/3 && randomNumber < 2/3){
-        computerMove="paper";
+        computerMove="paper 🖐";
         
     }else {
-        computerMove="scissor";
+        computerMove="scissor ✌";
     
     }
      document.getElementById('computerMove').innerText= computerMove;
@@ -22,24 +24,24 @@ let computerMove;
         result=`it's a draw!`;
 
       
-    }else if(computerMove === 'rock' && playerChoice === 'paper'){
+    }else if(computerMove === 'rock 👊' && playerChoice === 'paper 🖐'){
         result=`You Win!`;
         playerScore++;
-    }else if(computerMove === 'scissor' && playerChoice === 'paper'){
+    }else if(computerMove === 'scissor ✌' && playerChoice === 'paper 🖐'){
         result=`You Lose!`;
         computerScore++;
     }
-    else if(computerMove === 'rock' && playerChoice === 'scissor'){
+    else if(computerMove === 'rock 👊' && playerChoice === 'scissor ✌'){
         result=`You Lose!`;
         computerScore++;
     }
-    else if(computerMove === 'paper' && playerChoice === 'scissor'){
+    else if(computerMove === 'paper 🖐' && playerChoice === 'scissor ✌'){
         result=`You Win!`;
          playerScore++;
-    }else if(computerMove === 'paper' && playerChoice === 'rock'){
-        result="You Lose!"
+    }else if(computerMove === 'paper 🖐' && playerChoice === 'rock 👊'){
+        result="You Lose!";
         computerScore++;
-    }else if(computerMove === 'scissor' && playerChoice === 'rock'){
+    }else if(computerMove === 'scissor ✌' && playerChoice === 'rock 👊'){
         result = "You Win!";
         playerScore++;
 
@@ -48,6 +50,18 @@ let computerMove;
      document.getElementById('result').innerText= result;
      document.getElementById('playerscore').innerText= playerScore;
      document.getElementById('computerscore').innerText= computerScore;
+}
+function rock() {
+    document.getElementById('yourchoice').innerText= "Rock 👊";
+  
+}
+function paper() {
+    document.getElementById('yourchoice').innerText= "Paper 🖐";
+   
+}
+function scissor() {
+    document.getElementById('yourchoice').innerText= "Scissor ✌";
+      
 }
 function restartGame() {
     playerScore=0;
