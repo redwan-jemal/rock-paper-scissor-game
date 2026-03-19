@@ -16,6 +16,7 @@ let computerMove;
     
     }
      document.getElementById('computerMove').innerText= computerMove;
+     
     let result;
      if(computerMove === playerChoice){
         result=`it's a draw!`;
@@ -53,6 +54,7 @@ function restartGame() {
     computerScore=0;
    document.getElementById('result').innerText= '';
    document.getElementById('computerMove').innerText= '';
+      document.getElementById('yourchoice').innerText= '';
 
      document.getElementById('playerscore').innerText= playerScore;
      document.getElementById('computerscore').innerText= computerScore;
